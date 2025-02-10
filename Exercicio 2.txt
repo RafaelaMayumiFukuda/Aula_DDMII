@@ -1,0 +1,11 @@
+Exercicio
+
+1) João Silva
+
+2) 20
+
+3) Rua das Flores,123, São Paulo, SP
+
+4) Tipo: telefone e email, Numero: 98765-4321, joao.silva@gmail.com
+
+5) 98765-4321
