@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAAEAE"
+    android:backgroundTint="#C63B3B"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="100dp"
+        android:text="@string/calcule_imc"
+        android:textAlignment="center"
+        android:textColor="#0C0303" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua altura"
+        android:minHeight="100dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_peso"
+        android:minHeight="100dp" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="Resultado"
+        android:textColor="#200909" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:onClick="calcularIMC"
+            android:text="Calcular"
+            android:textAlignment="center"
+            app:iconSize="100dp" />
+    </LinearLayout>
+
+</LinearLayout>
